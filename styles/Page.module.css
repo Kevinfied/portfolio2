@@ -27,3 +27,13 @@
   padding: 18px;
   color: var(--text-muted);
 }
+
+.esportsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.esportsItem {
+  color: var(--text-primary);
+}

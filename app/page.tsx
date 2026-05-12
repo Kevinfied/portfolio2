@@ -33,14 +33,15 @@ export default function Home() {
     if (activeTab === "Esports") {
       return (
         <div className={styles.morePanel}>
-          <strong>Esports highlights</strong>
-          <ul>
-            <li>Clash Royale - Personal best: 7,200 trophies (2025 season)</li>
-            <li>VALORANT - Peak rank: Ascendant 2, mained Controller</li>
-            <li>Counter-Strike - Faceit Level 7, entry rifler</li>
-            <li>Apex Legends - Diamond in Season 18</li>
-            <li>Overwatch 2 - Masters support</li>
-          </ul>
+          <div className={styles.esportsList}>
+            <p className={styles.esportsItem}>
+              Clash Royale - Personal best: #388 Global, #10 Canada, 3170 Ultimate Champion Medals
+            </p>
+            <p className={styles.esportsItem}>VALORANT - Peak rank: Immortal 2, 98RR</p>
+            <p className={styles.esportsItem}>Counter-Strike - 26,031 Premier ELO, 95 Aim Rating</p>
+            <p className={styles.esportsItem}>BTD6 - Top 1 Global Finish in Boss Event</p>
+            <p className={styles.esportsItem}>Kovaak's - Top 100 Aim Tracking</p>
+          </div>
         </div>
       );
     }

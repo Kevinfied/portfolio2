@@ -8,14 +8,25 @@ export default function Header({ isDark, onToggleTheme }) {
         <div className={styles.nameRow}>
           <h1 className={styles.name}>Kevin Xu</h1>
           <div className={styles.avatarRow}>
-            <div className={styles.avatar} />
-            <div className={styles.avatar} />
+            <div className={styles.avatar}>
+              <img
+                className={styles.avatarImage}
+                src="/archer.png"
+                alt="Archer"
+              />
+            </div>
+            <div className={styles.avatar}>
+              <img
+                className={styles.avatarImage}
+                src="/xiaojie.jpg"
+                alt="Xiaojie"
+              />
+            </div>
           </div>
         </div>
         <p className={styles.subtitle}>CS & AI @ Purdue University</p>
         <p className={styles.bio}>
-          I build product-grade web apps with a focus on clean systems, thoughtful UI,
-          and performance. Currently exploring developer tooling and observability.
+          Hello explore me
         </p>
         <div className={styles.videoCta}>
           <div className={styles.thumbnail} />
