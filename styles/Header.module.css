@@ -1,0 +1,145 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.identity {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.nameRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.bio {
+  max-width: 560px;
+  color: var(--text-primary);
+}
+
+.avatarRow {
+  display: flex;
+  gap: 10px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #2c2c2c;
+  border: 1px solid var(--border);
+}
+
+.videoCta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  max-width: 420px;
+}
+
+.thumbnail {
+  width: 72px;
+  height: 56px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2f2f2f, #1a1a1a);
+  border: 1px solid var(--border);
+}
+
+.videoText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.videoEyebrow {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+}
+
+.videoTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.videoMeta {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 18px;
+  min-width: 160px;
+}
+
+.toggle {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.link {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.link:hover {
+  color: var(--text-primary);
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .side {
+    align-items: flex-start;
+  }
+
+  .links {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+}
