@@ -1,8 +1,16 @@
 // @ts-nocheck
-import { Inter } from "next/font/google";
+import { Fraunces, Space_Grotesk } from "next/font/google";
 import "../styles/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-body",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-display",
+});
 
 export const metadata = {
   title: "Kevin Xu",
@@ -11,7 +19,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.className} data-theme="dark">
+    <html
+      lang="en"
+      className={`${spaceGrotesk.variable} ${fraunces.variable}`}
+      data-theme="dark"
+    >
       <body>{children}</body>
     </html>
   );
