@@ -29,7 +29,7 @@ export default function Home() {
         <h1 className={styles.title}>herro! I&apos;m Kevin</h1>
         <div className={styles.detailList}>
           <p className={styles.detailItem}>computer science @ Purdue University</p>
-          <p className={styles.detailItem}>software developer x designer</p>
+          <p className={styles.detailItem}>software developer</p>
         </div>
         <div className={styles.ctaRow}>
           <a className={`${styles.cta} ${styles.ctaPrimary}`} href="#connect">

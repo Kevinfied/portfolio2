@@ -78,7 +78,7 @@
 }
 
 .title {
-  font-family: var(--font-display), "Times New Roman", serif;
+  font-family: var(--font-hero), var(--font-display), "Times New Roman", serif;
   font-size: clamp(32px, 4vw, 44px);
   font-weight: 600;
   letter-spacing: 0.01em;
