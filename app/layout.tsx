@@ -1,5 +1,6 @@
 // @ts-nocheck
 import { Fraunces, Space_Grotesk } from "next/font/google";
+import ClickSound from "../components/ClickSound";
 import "../styles/globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -24,7 +25,10 @@ export default function RootLayout({ children }) {
       className={`${spaceGrotesk.variable} ${fraunces.variable}`}
       data-theme="dark"
     >
-      <body>{children}</body>
+      <body>
+        <ClickSound />
+        {children}
+      </body>
     </html>
   );
 }

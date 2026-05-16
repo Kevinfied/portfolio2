@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/Page.module.css";
 
 export default function Home() {
@@ -5,15 +6,18 @@ export default function Home() {
     <main className={styles.page}>
       <nav className={styles.topNav}>
         <div className={styles.navLinks}>
-          <a className={styles.navLink} href="/projects">
+          <Link className={styles.navLink} href="/">
+            home
+          </Link>
+          <Link className={styles.navLink} href="/projects">
             projects
-          </a>
-          <a className={styles.navLink} href="#about">
+          </Link>
+          <Link className={styles.navLink} href="#about">
             about
-          </a>
-          <a className={styles.navLink} href="#collections">
+          </Link>
+          <Link className={styles.navLink} href="#collections">
             collections
-          </a>
+          </Link>
         </div>
       </nav>
 

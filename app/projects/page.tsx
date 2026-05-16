@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../../styles/Projects.module.css";
 
 const projects = [
@@ -22,18 +23,18 @@ export default function ProjectsPage() {
   return (
     <main className={styles.page}>
       <nav className={styles.topNav}>
-        <a className={styles.navLink} href="/">
+        <Link className={styles.navLink} href="/">
           home
-        </a>
-        <a className={styles.navLink} href="/projects">
+        </Link>
+        <Link className={styles.navLink} href="/projects">
           projects
-        </a>
-        <a className={styles.navLink} href="/#about">
+        </Link>
+        <Link className={styles.navLink} href="/#about">
           about
-        </a>
-        <a className={styles.navLink} href="/#collections">
+        </Link>
+        <Link className={styles.navLink} href="/#collections">
           collections
-        </a>
+        </Link>
       </nav>
       <header className={styles.header}>
         <p className={styles.eyebrow}>Projects</p>

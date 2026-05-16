@@ -8,6 +8,10 @@
   gap: 32px;
   position: relative;
   overflow: hidden;
+  background-image: url("/background1.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -84,25 +88,12 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  color: var(--text-muted);
+  color: #cfe3ff;
   font-size: 15px;
 }
 
 .detailItem {
   position: relative;
-  padding-left: 16px;
-}
-
-.detailItem::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--accent);
 }
 
 .ctaRow {
@@ -176,9 +167,9 @@
 
 .cornerGif {
   position: absolute;
-  right: 18px;
+  left: 18px;
   bottom: 18px;
-  width: min(160px, 28vw);
+  width: min(92px, 20vw);
   height: auto;
   z-index: 1;
 }
