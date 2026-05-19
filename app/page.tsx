@@ -1,25 +1,12 @@
-import Link from "next/link";
+import { FaGithub, FaLinkedinIn, FaXTwitter, FaYoutube } from "react-icons/fa6";
+import shellStyles from "../styles/PageShell.module.css";
+import TopNav from "../components/TopNav";
 import styles from "../styles/Page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.page}>
-      <nav className={styles.topNav}>
-        <div className={styles.navLinks}>
-          <Link className={styles.navLink} href="/">
-            home
-          </Link>
-          <Link className={styles.navLink} href="/projects">
-            projects
-          </Link>
-          <Link className={styles.navLink} href="#about">
-            about
-          </Link>
-          <Link className={styles.navLink} href="#collections">
-            collections
-          </Link>
-        </div>
-      </nav>
+    <main className={`${shellStyles.pageShell} ${styles.page}`}>
+      <TopNav />
 
       <section className={styles.hero} id="about">
         {/* <div className={styles.nameBadge}>
@@ -44,17 +31,25 @@ export default function Home() {
       <footer className={styles.footer}>
         <span className={styles.footerText}>thanks for stopping by</span>
         <div className={styles.socialRow}>
-          <a className={styles.social} href="https://www.linkedin.com/in/qiyuan-xu/">
-            in
+          <a
+            className={styles.social}
+            href="https://www.linkedin.com/in/qiyuan-xu/"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedinIn />
           </a>
-          <a className={styles.social} href="https://github.com/Kevinfied">
-            gh
+          <a
+            className={styles.social}
+            href="https://github.com/Kevinfied"
+            aria-label="GitHub"
+          >
+            <FaGithub />
           </a>
-          <a className={styles.social} href="#">
-            x
+          <a className={styles.social} href="#" aria-label="X">
+            <FaXTwitter />
           </a>
-          <a className={styles.social} href="#">
-            yt
+          <a className={styles.social} href="#" aria-label="YouTube">
+            <FaYoutube />
           </a>
         </div>
       </footer>
